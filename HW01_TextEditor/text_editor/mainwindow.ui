@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>686</width>
+    <height>485</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QTextEdit" name="textEdit">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>686</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menufile_F">
+    <property name="title">
+     <string>檔案(F)</string>
+    </property>
+    <addaction name="newAction"/>
+    <addaction name="openAction"/>
+    <addaction name="saveAction"/>
+    <addaction name="saveAsAction"/>
+    <addaction name="closeAction"/>
+   </widget>
+   <widget class="QMenu" name="menucompile">
+    <property name="title">
+     <string>編譯(E)</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menucontruct_B">
+    <property name="title">
+     <string>建構(B)</string>
+    </property>
+   </widget>
+   <addaction name="menufile_F"/>
+   <addaction name="menucompile"/>
+   <addaction name="menucontruct_B"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="newAction">
+   <property name="text">
+    <string>開啟新檔(N)</string>
+   </property>
+  </action>
+  <action name="openAction">
+   <property name="text">
+    <string>開啟舊檔(O)</string>
+   </property>
+  </action>
+  <action name="saveAction">
+   <property name="text">
+    <string>儲存(S)</string>
+   </property>
+  </action>
+  <action name="saveAsAction">
+   <property name="text">
+    <string>另存新檔(K)</string>
+   </property>
+  </action>
+  <action name="closeAction">
+   <property name="text">
+    <string>關閉(Q)</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

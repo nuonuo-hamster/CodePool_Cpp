@@ -1,0 +1,8 @@
+@qt 專屬cmd
+d:
+cd {workspace}
+qmake -project
+{project name}.pro 最後加上 QT += widgets gui
+qmake
+mingw32-make
+release/.exe
